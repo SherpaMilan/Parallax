@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+
+
+
+.para{
+    background: #a28da870;
+  color: rgba(1, 7, 10, 0.678);
+  padding: 2rem;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6{
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img1{
+    
+    background: url(img/a.jpg) 
+    no-repeat 
+    center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.img2{
+    
+    background: url(img/b.jpg) 
+    no-repeat 
+    center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.img3{
+    
+    background: url(img/c.jpg) 
+    no-repeat
+     center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.img4{
+    
+    background: url(img/d.jpg) 
+    no-repeat 
+    center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.img5{
+    
+    background: url(img/e.jpg) 
+    no-repeat 
+    center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.img6{
+    
+    background: url(img/f.jpg) 
+    no-repeat 
+    center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+
+.title {
+    background: rgba(0, 0, 0, 0.742);
+    color: rgba(180, 16, 213, 0.926);
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+
