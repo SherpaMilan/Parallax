@@ -1,15 +1,30 @@
 body{
     margin: 0;
 }
+/* 
+.video {
+    position: relative;
+  }
+
+  .video >div {
+    position: absolute;
+    top: 200px;
+    font-size: 3rem;
+    color: rgba(228, 173, 239, 0.786);;
+    background: rgba(204, 196, 196, 0.309);
+    left: 30vw;
+    padding: 2rem;
+    border-radius: 10px;
+  } */
 
 
 
 .para{
-    background: #a28da870;
+  background: #a28da870;
   color: rgba(1, 7, 10, 0.678);
   padding: 2rem;
 }
-
+.img11,
 .img1,
 .img2,
 .img3,
@@ -23,6 +38,17 @@ body{
     align-items: center;
 }
 
+
+.img11{
+    
+    background: url(img/1.jpg) 
+    no-repeat 
+    center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
 
 
 .img1{
