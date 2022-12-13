@@ -1,25 +1,82 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-/* 
+
 .video {
-    position: relative;
-  }
+  position: relative;
+}
+/* video is a elelment like nav so we just use the same name to css */
+video {
+  height: 100%;
 
-  .video >div {
-    position: absolute;
-    top: 200px;
-    font-size: 3rem;
-    color: rgba(228, 173, 239, 0.786);;
-    background: rgba(204, 196, 196, 0.309);
-    left: 30vw;
-    padding: 2rem;
-    border-radius: 10px;
-  } */
+  width: 100%;
+  object-fit: cover;
+}
 
+.video > div {
+  position: absolute;
+  top: 200px;
+  font-size: 2rem;
+  color: rgb(240, 231, 241);
+  background: rgba(204, 196, 196, 0.309);
+  left: 30vw;
+  padding: 2rem;
+  border-radius: 10px;
+}
 
+.go-down {
+  position: absolute;
 
-.para{
+  /* //left means from left 50% bicha maa */
+  left: 50%;
+  bottom: 80px;
+  color: rgb(184, 8, 8);
+  font-size: 70px;
+  font-weight: bolder;
+
+  transform: rotate(90deg);
+  animation: down 1s ease-out infinite;
+}
+
+nav {
+  background: rgba(12, 23, 4, 0.825);
+  /* top le nav lai kati top bata suru garne nav */
+  top: 0;
+  position: sticky;
+}
+
+.container {
+  display: flex;
+  color: rgb(223, 79, 17);
+  justify-content: space-between;
+
+  align-items: center;
+  font-size: 30px;
+
+  width: 80%;
+  margin: auto;
+}
+
+.container .logo {
+  font-size: 54px;
+}
+
+.container ul {
+  display: flex;
+  list-style: none;
+}
+
+.container ul li {
+  margin-right: 50px;
+  color: rgb(255, 102, 0);
+}
+
+.container ul li:hover {
+  background: rgb(92, 97, 197);
+  cursor: progress;
+}
+
+.para {
   background: #a28da870;
   color: rgba(1, 7, 10, 0.678);
   padding: 2rem;
@@ -30,101 +87,96 @@ body{
 .img3,
 .img4,
 .img5,
-.img6{
-    min-height: 70vh;
+.img6 {
+  min-height: 70vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.img11{
-    
-    background: url(img/1.jpg) 
-    no-repeat 
-    center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img11 {
+  background: url(img/1.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
-.img1{
-    
-    background: url(img/a.jpg) 
-    no-repeat 
-    center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img1 {
+  background: url(img/a.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.img2{
-    
-    background: url(img/b.jpg) 
-    no-repeat 
-    center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img2 {
+  background: url(img/b.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.img3{
-    
-    background: url(img/c.jpg) 
-    no-repeat
-     center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img3 {
+  background: url(img/c.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.img4{
-    
-    background: url(img/d.jpg) 
-    no-repeat 
-    center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img4 {
+  background: url(img/d.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.img5{
-    
-    background: url(img/e.jpg) 
-    no-repeat 
-    center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img5 {
+  background: url(img/e.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.img6{
-    
-    background: url(img/f.jpg) 
-    no-repeat 
-    center center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
+.img6 {
+  background: url(img/f.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
 
 .title {
-    background: rgba(0, 0, 0, 0.742);
-    color: rgba(180, 16, 213, 0.926);
-    font-size: 3rem;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-  }
+  background: rgba(0, 0, 0, 0.742);
+  color: rgba(180, 16, 213, 0.926);
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
 
+@keyframes down {
+  0% {
+    bottom: 80px;
+    opacity: 0.1;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+.go-up {
+  background: orangered;
+  font-size: 40px;
+
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+
+  transform: rotate(270deg);
+
+  /* width height le circle banayo  */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.go-up {
+  text-decoration: none;
+}
